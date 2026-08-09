@@ -1,13 +1,19 @@
 /**
- * Hello World Application - Use Case 2
+ * Hello World Application - Use Case 3
  *
  * @author Ishita Singh
- * @version 2.0
+ * @version 3.0
  */
 public class HelloWorld {
 
     public static void main(String[] args) {
-        String name = args[0];
+
+        String name = "World";
+
+        if (args.length > 0) {
+            name = args[0];
+        }
+
         System.out.println("Hello " + name);
     }
 }
