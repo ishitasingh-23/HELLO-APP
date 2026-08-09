@@ -1,8 +1,8 @@
 /**
- * Hello World Application - Use Case 5
+ * Hello World Application - Use Case 6
  *
  * @author Ishita Singh
- * @version 5.0
+ * @version 6.0
  */
 public class HelloWorld {
 
@@ -11,9 +11,15 @@ public class HelloWorld {
         if (args.length == 0) {
             System.out.println("Hello, World!");
         } else {
+            String greeting = "Hello, ";
+
             for (String name : args) {
-                System.out.println("Hello, " + name + "!");
+                greeting += name + ", ";
             }
+
+            greeting = greeting.substring(0, greeting.length() - 2);
+
+            System.out.println(greeting + "!");
         }
     }
 }
